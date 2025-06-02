@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainlay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backem"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/mainActivityLay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="9dp">
+
+        <Button
+            android:id="@+id/newPostBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="40sp"
+            android:layout_marginRight="40sp"
+            android:layout_marginBottom="10sp"
+            android:background="@drawable/btn_bg"
+            android:gravity="center"
+            android:text="create post" />
+
+        <ImageButton
+            android:id="@+id/discoverBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:outlineAmbientShadowColor="@color/teal_200"
+            app:srcCompat="?android:attr/actionModeWebSearchDrawable" />
+
+        <ImageView
+            android:id="@+id/refresh"
+            android:layout_width="50sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="#A6616265"
+            android:outlineAmbientShadowColor="@color/teal_200"
+            android:textAlignment="center"
+            app:srcCompat="@android:drawable/stat_notify_sync" />
+
+        <LinearLayout
+            android:id="@+id/postListLayOut"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#65ECE4E4"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <ListView
+                android:id="@+id/postList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="invisible">
+
+            </ListView>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
